@@ -4,10 +4,11 @@ class Solution {
     int maxSubArray(vector<int>& nums) {
         int sum=0, re=INT_MIN;
         for(int x:nums){
-        sum=max(sum+x,x);
-        re=max(sum,re);
+            sum=max(sum+x,x);
+            re=max(sum,re);
+        }
+        return re;
     }
-    return re;
 }
 ```
 
