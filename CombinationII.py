@@ -22,7 +22,7 @@ class Solution:
 
         return ret
 
-    def combinationSum(self, candidates: list, target: int) -> list:
+    def combinationSum2(self, candidates: list, target: int) -> list:
         # 先将输入排序，方便后面优化，例如如果当前选择的元素总和已经大于 target 了，就不用往后选了，因为后面的数更大
         # 排序之后，candidates 是一组一组相同数字组成的列表，例如 [1, 1, 1, 2, 2, 3, 3, 3]
         candidates.sort()
